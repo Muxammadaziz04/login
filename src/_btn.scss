@@ -1,0 +1,41 @@
+.btn{
+    width: 200px;
+    height: 48px;
+    display: flex;
+    background: #203A4C;
+    text-align: center;
+    &__scroll{
+        width: 48px;
+        height: 48px;
+        background-color: #000;
+        opacity: 0.1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s ease;
+    }
+    &__link{
+        width: 100%;
+        text-align: center;
+    }
+    &__link > a{
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 48px;
+        letter-spacing: 2px;
+        color: #FFFFFF;
+    }
+    &:hover{
+        background-color: #5FB4A2;
+    }
+    &:hover > &__link{
+        background-color: (95, 180, 162, 0.2)
+    }
+    &:active{
+        background: #203A4C;
+    }
+    &:active > &__link{
+        opacity: 0.2;
+    }
+}

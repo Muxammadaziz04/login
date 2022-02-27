@@ -1,0 +1,55 @@
+@import "../../variables";
+@import "../../fonsts";
+
+.section2{
+    width: 100%;
+    &__block{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title{
+        min-width: 350px;
+        max-width: 350px;
+        font-family: "Ibarra Real Nova";
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: -0.357143px;
+        margin-right: 32px;
+    }
+    &__line{
+        width: 534px;
+        max-width: 534px;
+        height: 1px;
+        background: #33323D;
+        opacity: 0.15;
+    }
+    &__btn{
+        min-width: 162px !important;
+        max-width: 162px;
+        margin-left: 32px;
+    }
+}
+
+@media (max-width: 596px) {
+    .section2__line{
+        display: none;
+    }
+    .section2__block{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section2__title, .section2__btn{
+        margin: 0;
+    }
+    .section2__title{
+        margin-bottom: 40px;
+        min-width: 100%;
+    }
+    .section2__btn{
+        margin-bottom: 80px;
+    }
+    
+}
