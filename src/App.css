@@ -3,6 +3,7 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 .close{
@@ -41,4 +42,9 @@ body{
 .modal__title{
     font-size: 28px;
     text-align: center;
+}
+
+.erorr{
+    color: red;
+    font-size: 16px;
 }
